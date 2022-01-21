@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import { LngLatLike } from 'mapbox-gl'
 
 interface IGeojson {
     type: string,
@@ -29,9 +30,9 @@ namespace OLD {
 
 /**네이버 지도의 마커 geojson에 기반 */
 namespace NEW {
-    interface IGeometry {
+    export interface IGeometry {
         type: string,
-        coordinates: [number, number]
+        coordinates: LngLatLike
     }
     interface IProperties {
         id?: string,
@@ -73,5 +74,6 @@ const geojsonFeatureOldToNew = (target: OLD.IGeojsonFeature): NEW.IGeojsonFeatur
     }
 }
 
+interface IGeometry extends NEW.IGeometry { }
 interface IGeojsonFeature extends NEW.IGeojsonFeature { }
-export type { IGeojson, IGeojsonFeature }
+export type { IGeojson, IGeojsonFeature, IGeometry }

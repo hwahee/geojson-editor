@@ -15,7 +15,6 @@
 5. npx serve -s build (서버 실행)
 
 
-
 ## 기능
 - geojson feature 보여줌
 - reverse geocoding으로 주소 찾기
@@ -32,6 +31,7 @@
     - 임의 페이지 번호 입력으로 이동하기
 - reverse geocoding으로 좌표를 바탕으로 한 주소 구하기
 - 지도 구현하기
+- 지도를 사용하여 좌표 세팅하기
 ### 계속할 일
 - 컨트롤러 보강하기
 - DB 업로드 전에 테스트할 함수 더 만들기
