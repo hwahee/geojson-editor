@@ -37,3 +37,17 @@
     transform: translateY(0px);
   }
 }
+
+
+tr th td {
+  border:1px solid black;
+}
+th {
+  max-width: 80px;
+}
+tr  li {
+  text-align: right;
+}
+tr li input {
+  min-width: 400px;
+}

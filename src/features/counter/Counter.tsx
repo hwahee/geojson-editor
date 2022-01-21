@@ -4,7 +4,7 @@ import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {
   decrement,
   increment,
-  incrementByAmount,
+  setByAmount,
   incrementAsync,
   incrementIfOdd,
   selectCount,
@@ -46,7 +46,7 @@ export function Counter() {
         />
         <button
           className={styles.button}
-          onClick={() => dispatch(incrementByAmount(incrementValue))}
+          onClick={() => dispatch(setByAmount({target:incrementValue}))}
         >
           Add Amount
         </button>

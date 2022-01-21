@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
+import geojsonReducer from '../features/geojson/geojsonSlice'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    geojson: geojsonReducer,
   },
 });
 
